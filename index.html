@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="refresh" content="" />
+  <title>Login & Sign Up</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<div class="wrapper" id="formWrapper">
+  <!-- Login Form -->
+  <div class="form-container login">
+    <h2>Login</h2>
+    <form>
+      <input type="email" placeholder="Email,username..." required />
+      <input type="password" placeholder="Password" required />
+  <div class="forgot-password" tabindex="0">Forgot password?</div>
+  <button type="submit" class="submit-btn">Login</button>
+  <div class="social-login">
+    <div class="social-btn google" title="Sign in with Google" role="button" tabindex="0">
+      <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+      </svg>
+    </div>
+    <div class="social-btn facebook" title="Sign in with Facebook" role="button" tabindex="0">
+      <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+      </svg>
+    </div>
+    <div class="social-btn github" title="Sign in with GitHub" role="button" tabindex="0">
+      <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+      </svg>
+    </div>
+    <div class="social-btn x" title="Sign in with X (Twitter)" role="button" tabindex="0">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 1200 1227">
+      </svg>
+    </div>
+  </div>
+</form>
+</div>
+
+<!-- Signup Form -->
+<div class="form-container signin">
+  <h2>Sign Up</h2>
+  <form>
+    <input type="text" placeholder="Username" required />
+    <input type="email" placeholder="Email" required />
+    <input type="password" placeholder="Password" required />
+    <input type="password" placeholder="Confirmed Password" required />
+    <label class="accept-terms">
+  <input type="checkbox" required /> I accept the terms & conditions
+</label>
+
+<button type="submit" class="submit-btn">Sign Up</button>
+
+<div class="social-login">
+  <div class="social-btn google" title="Sign up with Google" role="button" tabindex="0">
+    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+      <!-- Google SVG content -->
+    </svg>
+  </div>
+
+  <div class="social-btn facebook" title="Sign up with Facebook" role="button" tabindex="0">
+    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+      <!-- Facebook SVG content -->
+    </svg>
+  </div>
+
+  <div class="social-btn github" title="Sign up with Github" role="button" tabindex="0">
+    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+      <!-- Github SVG content -->
+    </svg>
+  </div>
+
+  <div class="social-btn x" title="Sign in with X (Twitter)" role="button" tabindex="0">
+    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 1200 1227">
+      <!-- Twitter SVG content -->
+    </svg>
+  </div>
+</div>
+
+  </form>
+</div>
+<!-- Right side toggle -->
+<div class="toggle-container">
+  <h2 id="toggleHeading">Don't have an account?</h2>
+  <p id="toggleText">Sign up to get started!</p>
+  <button class="switch-btn" id="toggleBtn">Sign Up</button>
+</div>
+</div>
+
+<script>
+  const wrapper = document.getElementById('formWrapper');
+  const toggleBtn = document.getElementById('toggleBtn');
+  const toggleHeading = document.getElementById('toggleHeading');
+  const toggleText = document.getElementById('toggleText');
+
+  toggleBtn.addEventListener('click', () => {
+    wrapper.classList.toggle('active');
+
+    if (wrapper.classList.contains('active')) {
+      toggleHeading.textContent = "Already have an account?";
+      toggleText.textContent = "Login to your account!";
+      toggleBtn.textContent = "Login";
+    } else {
+      toggleHeading.textContent = "Don't have an account?";
+      toggleText.textContent = "Sign up to get started!";
+      toggleBtn.textContent = "Sign Up";
+    }
+  });
+  <div class="input-group">
+  <input type="email" required />
+  <label>Email Address</label>
+</div>
+<div class="input-group icon-input">
+  <i class="fa fa-envelope"></i>
+  <input type="email" required />
+  <label>Email</label>
+</div>
+<img src="logo.png" alt="App Logo" class="logo" />
+<video autoplay muted loop id="bg-video">
+  <source src="your-video.mp4" type="video/mp4">
+</video>
+<div class="logo-container">
+  <img src="logo.png" alt="Logo">
+  <h1>YourApp</h1>
+  <p>Welcome back to the future</p>
+</div>
+
+</script>
+    </form>
+  </div>
+</div>
+
+</body>
+</html>
